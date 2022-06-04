@@ -5,9 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup page</title>
+
+    <style>
+        #main{
+            border: 1px solid transparent;
+            width: 27%;
+            height: 550px;
+            background-color: #48c9b0;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            margin-top: 70px;
+            
+        }
+        #inform{
+            /* border: 1px solid blue; */
+            width: 76%;
+            height: 400px;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+        #inform > div {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 63px;
+            margin-bottom: 10px;
+            
+        } 
+        #main > p {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+        .white{
+            background-color:#f2f2f2 ;
+            color: #bababa;
+            font-size: 1.2rem;
+            display: flex;
+            font-weight: 500;
+        
+        }
+        #inform > div:nth-child(1) >p{
+            margin-left: 15px;
+        }
+        #inform > div:nth-child(2) >p{
+            margin-left: 15px;
+        }
+        #inform > div:nth-child(3) >p{
+            margin-left: 15px;
+        }
+        .trans{
+            background-color: #17a589;
+            color: white;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    
+
+
+    </style>
 </head>
 <body>
-   <h1>I am making Signup</h1>  
-   work in progress
+   <div id="main">
+       <p>- Visitor -</p>
+       <div id="inform">
+           <div class="white"><p>Full name</p></div>
+           <div class="white"><p>Email</p></div>
+           <div class="white"><p>Organisation</p></div>
+           <div class="trans"> <p>SIGN UP</p> </div>
+           <div class="trans"> <p>RETURN</p> </div>
+       </div>
+   </div>
 </body>
 </html>
