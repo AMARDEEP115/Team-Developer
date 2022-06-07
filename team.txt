@@ -1,8 +1,8 @@
+GROUP - 6
 TEAM NAME:  TEAM DEVELOPER
-
 TEAM MEMBERS:
-1. RAJ GUPTA                - {Login Page}
-2. PRIYANKA DHAR            - {Navbar Page} 
-3. AFZAL QURESHI            - {Signup Page}
-4. KUMAR SHUSHANT SHEKHAR   - {Mens Page}
-5. AMAR DEEP                - {Created repository and linked all pages}
+1. RAJ GUPTA  ( fw19_1067 )              - {Login Page}
+2. PRIYANKA DHAR  ( fw19_1140 )          - {Navbar Page} 
+3. AFZAL QURESHI  ( fp04_198 )           - {Signup Page}
+4. KUMAR SHUSHANT SHEKHAR ( fw19_0479 )  - {Mens Page}
+5. AMAR DEEP  ( fp04_269 )               - {Created repository and linked all pages}
