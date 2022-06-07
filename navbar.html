@@ -5,63 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        #navbar{
+            margin-top: 5px;
+            width: 98%;
+            height: 10vh;
+            color: white;
+            background-color: navy;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 12px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 128, 0.771) 0px 4px 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+        }
+        .logo{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .right{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 22px;
+        }
+        p:hover{
+            cursor: pointer;
+            color: red;
+        }
+        /* *************************************************************************** */
+        /* linking Pages */
+        p>a:hover{
+            cursor: pointer;
+            color: red;
+        }
+        p{
+            margin: 0 12px 0 12px;
+        }
+        p>a{
+            margin: 0 12px 0 12px;
+        }
+        p>a{
+            text-decoration: none;
+            color: white;
+        }
+        /* *************************************************************************** */
+    </style>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    #navbar{
-        margin-top: 5px;
-        width: 98%;
-        height: 10vh;
-        color: white;
-        background-color: navy;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 12px;
-        align-items: center;
-        box-shadow: rgba(0, 0, 128, 0.771) 0px 4px 12px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border-radius: 20px;
-    }
-    .logo{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .right{
-        width: 40%;
-        display: flex;
-        justify-content: space-around;
-        margin-right: 22px;
-    }
-    p:hover{
-        cursor: pointer;
-        color: red;
-    }
-    /* *************************************************************************** */
-    /* linking Pages */
-    p>a:hover{
-        cursor: pointer;
-        color: red;
-    }
-    p{
-        margin: 0 12px 0 12px;
-    }
-    p>a{
-        margin: 0 12px 0 12px;
-    }
-    p>a{
-        text-decoration: none;
-        color: white;
-    }
-    /* *************************************************************************** */
-</style>
 <body>
     <div id="navbar">
         <div class="logo">Rebok</div>
