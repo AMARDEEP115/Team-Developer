@@ -39,24 +39,30 @@
             font-size: 2rem;
             font-family: 'Times New Roman', Times, serif;
         }
-        .white{
+        #white{
+            
             background-color:#f2f2f2 ;
-            color: #bababa;
+            color: black;
             font-size: 1.2rem;
             display: flex;
             font-weight: 500;
             font-family:'Times New Roman', Times, serif;
         
         }
-        #inform > div:nth-child(1) >p{
-            margin-left: 15px;
-        }
-        #inform > div:nth-child(2) >p{
-            margin-left: 15px;
-        }
-        #inform > div:nth-child(3) >p{
-            margin-left: 15px;
-        }
+        input[type="text"],
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 13px;
+        border: 1px solid #ccc;
+        color:black;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+        
         .trans{
             background-color: #17a589;
             color: white;
@@ -81,9 +87,10 @@
    <div id="main">
        <p>- Visitor -</p>
        <div id="inform">
-           <div class="white"><p>Full name</p></div>
-           <div class="white"><p>Email</p></div>
-           <div class="white"><p>Organisation</p></div>
+           <input type="text" placeholder="Full name" id="white">
+           <input type="text" placeholder="Email" id="white">
+           <input type="text" placeholder="Organisation" id="white">
+          
            <div class="trans"> <p>SIGN UP</p> </div>
            <div class="trans"> <p>RETURN</p> </div>
        </div>
