@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mensPage</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #container
+        {
+         display: grid;
+         grid-template-rows: 400px;
+         grid-template-columns: 50% 50%;
+         
+         justify-content: center;
+        
+        
+        }
+        #container>div:nth-child(1)
+        {
+            margin-left: 100px;
+        } #container>div:nth-child(2)
+        {
+            margin-left: 50px;
+        }
+        #container>div>img
+        {
+            margin-top: 25px;
+            width: 230px; 
+            height:270px;
+        }
+        .psec
+        {
+            display: flex;
+            font-size: 30px;
+            margin-top: -25px;
+           
+           
+        }
+        .psec>del
+        {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-left: 10px;
+        }
+        .psec>del+h3
+        {
+            color: green;
+            margin-left: 10px;
+            display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+        h1{
+            font-size: 40px;
+        }
+
+        h1+p{
+            color: gray;
+            font-size: 25px;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let menspage=[
+        {image2:"https://rukminim1.flixcart.com/image/332/398/jf9zxjk0/shrug/y/d/y/xxl-pasrg03181192-blk-pause-original-imaf3scthzumcghm.jpeg?q=50",name:"Pause",category:"Men Cotton Long Sleeves Shrug",price:"₹359",del:"₹1,499",dis:"-76%",class:"psec"},
+        {image2:"https://m.media-amazon.com/images/I/41Tey3RrfGL.jpg",name:"Jubination",category:"Men Wool Sleeveless Sweater Pack of 1",price:"₹799",del:"₹1,499",dis:"-47%",class:"psec"},
+        ];
+        menspage.map(function(elem) {
+       let design= document.createElement("div");
+        let image1=document.createElement("img");
+        image1.setAttribute("src",elem.image2);
+        let heading=document.createElement("h1");
+         heading.innerText=elem.name;
+         let cate=document.createElement("p");
+         cate.innerText=elem.category;
+         let d= document.createElement("div");
+         d.setAttribute("class",elem.class)
+         let amount=document.createElement("h2");
+         amount.innerText=elem.price;
+         let de=document.createElement("del");
+       
+        de.innerText=elem.del;
+         let disc=document.createElement("h3")
+         disc.innerText=elem.dis;
+        design.append(image1,heading,cate,d);
+        
+        d.append(amount,de,disc);
+         document.querySelector("#container").append(design);
+
+        });
+</script>
